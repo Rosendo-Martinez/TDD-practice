@@ -8,16 +8,16 @@ test('abc shifted by -1 to equal zab', () => {
     expect(caesarCipher('abc',-1)).toBe('zab');
 });
 
-test('efgh shifted by 27 to equal efgh', () => {
-    expect(caesarCipher('efgh',27)).toBe('efgh');
+test('efgh shifted by 27 to equal fghi', () => {
+    expect(caesarCipher('efgh',27)).toBe('fghi');
 });
 
-test('efgh shifted by -28 to equal defg', () => {
-    expect(caesarCipher('efgh',-28)).toBe('defg');
+test('efgh shifted by -28 to equal cdef', () => {
+    expect(caesarCipher('efgh',-28)).toBe('cdef');
 });
 
-test('efgh shifted by 55 to equal fghi', () => {
-    expect(caesarCipher('efgh',55)).toBe('fghi');
+test('efgh shifted by 55 to equal ijkl', () => {
+    expect(caesarCipher('efgh',55)).toBe('hijk');
 });
 
 test('123 ab ?!@ shifted by 3 to equal 123 de ?!@', () => {
